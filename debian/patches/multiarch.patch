@@ -1,0 +1,26 @@
+Index: checkpolicy-2.1.0/Makefile
+===================================================================
+--- checkpolicy-2.1.0.orig/Makefile	2011-12-30 10:52:31.000000000 +0900
++++ checkpolicy-2.1.0/Makefile	2011-12-30 10:56:31.558470187 +0900
+@@ -4,7 +4,7 @@
+ PREFIX ?= $(DESTDIR)/usr
+ BINDIR ?= $(PREFIX)/bin
+ MANDIR ?= $(PREFIX)/share/man
+-LIBDIR ?= $(PREFIX)/lib
++LIBDIR ?= $(PREFIX)/lib/$(DEB_HOST_MULTIARCH)
+ INCLUDEDIR ?= $(PREFIX)/include
+ TARGETS = checkpolicy checkmodule
+ 
+Index: checkpolicy-2.1.0/test/Makefile
+===================================================================
+--- checkpolicy-2.1.0.orig/test/Makefile	2011-12-30 10:59:04.366659283 +0900
++++ checkpolicy-2.1.0/test/Makefile	2011-12-30 11:00:12.686744558 +0900
+@@ -3,7 +3,7 @@
+ #
+ PREFIX ?= $(DESTDIR)/usr
+ BINDIR=$(PREFIX)/bin
+-LIBDIR=$(PREFIX)/lib
++LIBDIR=$(PREFIX)/lib/$(DEB_HOST_MULTIARCH)
+ INCLUDEDIR ?= $(PREFIX)/include
+ 
+ CFLAGS ?= -g -Wall -O2 -pipe

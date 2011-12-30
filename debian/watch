@@ -1,0 +1,9 @@
+# format version number, currently 2; this line is compulsory!
+version=2
+
+
+http://userspace.selinuxproject.org/trac/wiki/Releases \
+ http://userspace.selinuxproject.org/releases/.*/devel/checkpolicy-(.*).tar.gz
+
+#http://userspace.selinuxproject.org/releases/current/devel/checkpolicy-(.*).tar.gz
+#http://www.nsa.gov/selinux/code/download-trunk.cfm ../archives/checkpolicy-(.*)\.tgz
