@@ -3,10 +3,12 @@ VCS-Git: git://git.debian.org/~srivasta/debian/checkpolicy.git
 VCS-Browser: http://git.debian.org/?p=users/srivasta/debian/checkpolicy.git
 Priority: optional
 Section: utils
-Maintainer: Russell Coker <russell@coker.com.au>
-Uploaders: Manoj Srivastava <srivasta@debian.org>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Russell Coker <russell@coker.com.au>
+XSBC-Pexip-Original-Uploaders: Manoj Srivastava <srivasta@debian.org>
 Standards-Version: 3.8.4.0
 Build-Depends: bison, flex, libsepol1-dev (>= 2.1.0), libselinux1-dev (>= 2.1.0)
+XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
 
 Package: checkpolicy
 Architecture: any
